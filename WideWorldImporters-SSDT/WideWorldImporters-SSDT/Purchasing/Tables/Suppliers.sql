@@ -73,6 +73,8 @@ CREATE NONCLUSTERED INDEX [FK_Purchasing_Suppliers_PostalCityID]
 
 
 GO
+CREATE NONCLUSTERED INDEX [IX_Suppliers_PostPostalCode] ON [Purchasing].[Suppliers] (PostalPostalCode)
+GO
 EXECUTE sp_addextendedproperty @name = N'Description', @value = 'Auto-created to support a foreign key', @level0type = N'SCHEMA', @level0name = N'Purchasing', @level1type = N'TABLE', @level1name = N'Suppliers', @level2type = N'INDEX', @level2name = N'FK_Purchasing_Suppliers_SupplierCategoryID';
 
 
@@ -202,4 +204,8 @@ EXECUTE sp_addextendedproperty @name = N'Description', @value = 'Second postal a
 
 GO
 EXECUTE sp_addextendedproperty @name = N'Description', @value = 'Postal code for the supplier when sending by mail', @level0type = N'SCHEMA', @level0name = N'Purchasing', @level1type = N'TABLE', @level1name = N'Suppliers', @level2type = N'COLUMN', @level2name = N'PostalPostalCode';
+
+
+GO
+
 

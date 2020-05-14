@@ -237,4 +237,7 @@
     <Build Include="Sequences\Sequences\TransactionTypeID.sql" />
     <Build Include="Security\FilterCustomersBySalesTerritoryRole.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Script.PrepScriptsql.sql" />
+  </ItemGroup>
 </Project>
